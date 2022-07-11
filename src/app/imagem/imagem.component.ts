@@ -7,8 +7,7 @@ import { APIService } from '../api.service';
   styleUrls: ['./imagem.component.css'],
 })
 export class ImagemComponent implements OnInit {
-
-  foto: any;
+  public foto: any = '';
 
   constructor(private apiService: APIService) {}
 
@@ -17,9 +16,9 @@ export class ImagemComponent implements OnInit {
   }
 
   imagemDog() {
-    this.apiService.imagemDog().subscribe(foto => {
-      this.foto = foto;
-    }, 
-    )
+    this.apiService.imagemDog().subscribe((res: any) => {
+      this.foto = res;
+      console.log(this.foto);
+    });
   }
 }
