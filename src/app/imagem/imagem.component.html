@@ -1,28 +1,13 @@
 <div class="d-flex justify-content-center p-4">
-  <div class="card text-center" style="width: 100%; max-width: 600px">
+  <div class="card text-center" style="width: 100%; max-width: 600px; background-color: rgba(0, 0, 0, 0.5);">
     <div class="justify-content-center">
-      <button class="btn btn-outline-light">
-
-        <img src="../assets/wordart.png" alt="" (click)="imagemDog()" width="25%" />
+      <button class="btn p-4">
+        <img src="../assets/RandomDog.png" alt="" (click)="imagemDog()" width="25%" />
       </button>
     </div>
-    <img
-      *ngIf="foto"
-      [src]="foto.message"
-      alt="Random Dog"
-      width="100%"
-      style="max-height: 75vh"
-    />
-    <div class="ms-5 me-5 m-2">
-      <button
-        class="btn btn-outline-light fw-bold"
-        (click)="imagemDog()"
-        style="
-          background-image: linear-gradient(to left, cyan, rgb(255, 95, 207));
-        "
-      >
-        Refresh
-      </button>
-    </div>
+    <img *ngIf="foto" [src]="foto.message" alt="Random Dog" width="100%" style="max-height: 75vh" />
+    <button class="btn p-4">
+      <img src="../assets/Refresh.png" alt="" (click)="imagemDog()" width="25%" />
+    </button>
   </div>
 </div>

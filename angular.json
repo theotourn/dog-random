@@ -104,5 +104,8 @@
       }
     }
   },
-  "defaultProject": "dog-random"
+  "defaultProject": "dog-random",
+  "cli": {
+    "analytics": "480292c6-957a-48f6-9e8a-45d33b2a1bed"
+  }
 }
